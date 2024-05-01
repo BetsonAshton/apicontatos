@@ -24,7 +24,7 @@ namespace ApiContatos.Services.Controllers
             return StatusCode(201, new
             {
                 mensagem = "Contato cadastrado com sucesso.",
-                produto = _contatoAppService.Create(request)
+                contato = _contatoAppService.Create(request)
             });
         }
 
@@ -35,7 +35,7 @@ namespace ApiContatos.Services.Controllers
             return StatusCode(200, new
             {
                 mensagem = "Contato atualizado com sucesso.",
-                produto = _contatoAppService.Update(request)
+                contato = _contatoAppService.Update(request)
             });
         }
 
@@ -46,7 +46,7 @@ namespace ApiContatos.Services.Controllers
             return StatusCode(200, new
             {
                 mensagem = "Os seguintes dados do contato foram excluídos como sucesso.",
-                produto = _contatoAppService.Delete(id)
+                contato = _contatoAppService.Delete(id)
             });
         }
 
